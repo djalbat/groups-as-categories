@@ -1,4 +1,4 @@
-# Categories
+# Categories as Groups
 
 Groups Categories for [Occam](https://occam.science).
 
