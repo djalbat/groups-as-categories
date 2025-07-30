@@ -1,0 +1,12 @@
+Variable G:Group provisionally
+
+Theorem (GroupAsCategory)
+   Suppose
+     G:Group
+   Then
+     C_G:Category
+   Proof
+     .
+   Therefore
+     C_G:Category
+
