@@ -1,0 +1,78 @@
+Variable G:Group provisionally
+
+Variable o:Operation
+
+Variable e:Element
+Variable g:Element
+
+Lemma (GroupCaegoryElementsCorrespondToMorphims)
+  Suppose
+    g is an element of G
+  Then
+    μ_g:*_G ⟶ *_G
+  Proof
+    g is an element of G iff μ_g:*_G ⟶ *_G by GroupCategoryMorphisms
+    g is an element of G
+  Therefore
+    μ_g:*_G ⟶ *_G by BiconditionalImplicationLeftElimination
+
+Lemma (GroupCaegoryMorphismsCorrespondToElements)
+  Suppose
+    μ_g:*_G ⟶ *_G
+  Then
+    g is an element of G
+  Proof
+    g is an element of G iff μ_g:*_G ⟶ *_G by GroupCategoryMorphisms
+    μ_g:*_G ⟶ *_G
+  Therefore
+    g is an element of G by BiconditionalImplicationRightElimination
+
+Lemma (GroupCategoryIdentityMorphismsAlternateForm)
+  Suppose 
+    e is an identity element of G
+    o is an operation of G
+    g is an element of G
+  Then 
+    μ_e;μ_g = μ_g = μ_g;μ_e
+  Proof
+    e is an element of G by IdentityElementsAreElements
+    e is an identity element of G iff [G, o, e, g] satisfies GroupIdentityElement by IdentityElements
+    e is an identity element of G
+    [G, o, e, g] satisfies GroupIdentityElement by BiconditionalImplicationLeftElimination
+    g o e = g = e o g
+    g o e = g by DoubleEqualityRightElimination
+    (g o e) = g
+    μ_(g o e) = μ_g
+    μ_e;μ_g = μ_(g o e) by GroupCategoryComposition
+    μ_e;μ_g = μ_g
+    g = e o g  by DoubleEqualityLeftElimination
+    g = (e o g)
+    μ_g = μ_(e o g)
+    μ_g;μ_e = μ_(e o g) by GroupCategoryComposition
+    μ_g = μ_g;μ_e
+    Therefore
+      μ_e;μ_g = μ_g = μ_g;μ_e by DoubleEqualityIntroduction
+
+Lemma (GroupCategoryLeftIdentityMorphismsAlternateForm)
+  Suppose 
+    e is an identity element of G
+    o is an operation of G
+    g is an element of G
+  Then 
+    μ_e;μ_g = μ_g
+  Proof
+    μ_e;μ_g = μ_g = μ_g;μ_e by GroupCategoryIdentityMorphismsAlternateForm
+    Therefore
+      μ_e;μ_g = μ_g by DoubleEqualityRightElimination
+
+Lemma (GroupCategoryRightIdentityMorphismsAlternateForm)
+  Suppose 
+    e is an identity element of G
+    o is an operation of G
+    g is an element of G
+  Then 
+    μ_g = μ_g;μ_e
+  Proof
+    μ_e;μ_g = μ_g = μ_g;μ_e by GroupCategoryIdentityMorphismsAlternateForm
+    Therefore
+      μ_g = μ_g;μ_e by DoubleEqualityLeftElimination

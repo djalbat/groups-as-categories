@@ -1,0 +1,20 @@
+Variable G:Group provisionally
+
+Variable o:Operation
+
+Variable f:Element
+Variable g:Element
+
+Axiom (GroupCategorySingularObjects)
+  *_G is an object of C_G
+
+Axiom (GroupCategoryMorphisms)
+  f is an element of G iff μ_f:*_G ⟶ *_G
+
+Axiom (GroupCategoryComposition)
+  Suppose
+    f is an element of G
+    g is an element of G
+    o is an operation of G
+  Then
+    μ_f;μ_g = μ_(g o f)

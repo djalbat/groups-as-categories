@@ -1,0 +1,11 @@
+Metavariable P:Statement
+Metavariable Q:Statement
+Metavariable R:Statement
+
+Rule (DoubleConjunctionIntroduction)
+  Premises
+    P
+    Q
+    R
+  Conclusion
+    P ∧ Q  ∧ R

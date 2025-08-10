@@ -1,1 +1,5 @@
-Constructor *:Object provisionally
+Constructor *_Group:Object
+
+Constructor C_Group:Category
+
+Constructor μ_Element:Morphism
