@@ -5,9 +5,6 @@ Variable o:Operation
 Variable f:Element
 Variable g:Element
 
-Axiom (GroupCategorySingularObjects)
-  *_G is an object of C_G
-
 Axiom (GroupCategoryMorphisms)
   f is an element of G iff μ_f:*_G ⟶ *_G
 

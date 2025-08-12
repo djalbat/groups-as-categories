@@ -1,5 +1,5 @@
 Constructor *_Group:Object
 
-Constructor C_Group:Category
+Constructor C_Group:Category provisionally
 
 Constructor μ_Element:Morphism

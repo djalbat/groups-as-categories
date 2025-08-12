@@ -1,0 +1,26 @@
+Variable G:Group provisionally
+
+Variable o:Operation
+
+Variable e:Element
+
+Lemma (GroupCategorySingularObjects)
+  Suppose
+    e is an identity element of G
+    o is an operation of G
+  Then
+    *_G is an object of C_G
+  Proof
+    μ_e is an identity morphism of *_G by GroupCategoryIdentityElementsCorrespondToIdentityMorphisms
+    [*_G, μ_e] satisfies ObjectIdentityMorphisms
+    e is an element of G by IdentityElementsAreElements
+    μ_e:*_G ⟶ *_G by GroupCaegoryElementsCorrespondToMorphims
+    .
+    .
+    .
+    [C_G, μ_e] satisfies CategoryMorphisms by GroupCateogoryCategoryMorphisms
+    [C_G, μ_e] satisfies CategoryMorphisms ∧ [*_G, μ_e] satisfies ObjectIdentityMorphisms by ConjunctionIntroduction
+    *_G is an object of C iff ([C_G, μ_e] satisfies CategoryMorphisms ∧ [*_G, μ_e] satisfies ObjectIdentityMorphisms)
+    [C_G, μ_e] satisfies CategoryMorphisms ∧ [*_G, μ_e] satisfies ObjectIdentityMorphisms
+    Therefore
+      *_G is an object of C_G by BiconditionalImplicationRightElimination
