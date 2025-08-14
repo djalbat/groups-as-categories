@@ -13,7 +13,7 @@ Lemma (GroupCategorySingularObjects)
   Proof
     μ_e is an identity morphism of *_G by GroupCategoryIdentityElementsCorrespondToIdentityMorphisms
     [*_G, μ_e] satisfies ObjectIdentityMorphisms
-    e is an element of G by IdentityElementsAreElements
+    e is an element of G by GroupIdentityElementsAreElements
     μ_e:*_G ⟶ *_G by GroupCaegoryElementsCorrespondToMorphims
     .
     .

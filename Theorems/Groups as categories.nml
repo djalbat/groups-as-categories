@@ -1,10 +1,12 @@
-Variable C:Category provisionally
-
 Variable G:Group provisionally
+
+Variable C:Category provisionally
 
 Variable o:Operation
 
 Variable e:Element
+Variable f:Element
+Variable g:Element
 
 Theorem (GroupsAsCategories)
   Suppose
@@ -23,5 +25,21 @@ Theorem (GroupsAsCategories)
     Then
       id_*_G is an identity morphism of *_G
     [C_G, *_G] satisfies CategoryIdentityMorphisms
+    Suppose
+      μ_f:*_G ⟶ *_G in C_G
+      μ_g:*_G ⟶ *_G in C_G
+    Hence
+      μ_f:*_G ⟶ *_G by CategoryShorthandMorphismInroduction
+      μ_g:*_G ⟶ *_G by CategoryShorthandMorphismInroduction
+      f is an element of G by GroupCaegoryMorphismsCorrespondToElements
+      g is an element of G by GroupCaegoryMorphismsCorrespondToElements
+      g o f is an element of G by foo
+      .
+      .
+      .
+      .
+    Then
+      μ_f;μ_g:*_G ⟶ *_G in C_G
+      [C_G, *_G, *_G, *_G, μ_f, μ_g] satisfies CategoryCompositionOfMorphisms
     Therefore
     C_G:Category by Categories

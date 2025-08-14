@@ -35,8 +35,8 @@ Lemma (GroupCategoryIdentityMorphismsAlternateForm)
   Then 
     μ_e;μ_g = μ_g = μ_g;μ_e
   Proof
-    e is an element of G by IdentityElementsAreElements
-    e is an identity element of G iff [G, o, e, g] satisfies GroupIdentityElement by IdentityElements
+    e is an element of G by GroupIdentityElementsAreElements
+    e is an identity element of G iff [G, o, e, g] satisfies GroupIdentityElement by GroupIdentityElements
     e is an identity element of G
     [G, o, e, g] satisfies GroupIdentityElement by BiconditionalImplicationLeftElimination
     g o e = g = e o g
@@ -85,7 +85,7 @@ Lemma (GroupCategoryIdentityElementsCorrespondToIdentityMorphisms)
     μ_e is an identity morphism of *_G
   Proof
     μ_e is an identity morphism of *_G iff (μ_e:*_G ⟶ *_G ∧ [*_G, *_G, μ_e, μ_g] satisfies CategoryLeftIdentityMorphisms ∧ [*_G, *_G, μ_g, μ_e] satisfies CategoryRightIdentityMorphisms) by IdentityMorphisms
-    e is an element of G by IdentityElementsAreElements
+    e is an element of G by GroupIdentityElementsAreElements
     μ_e:*_G ⟶ *_G by GroupCaegoryElementsCorrespondToMorphims
     Suppose
       μ_g:*_G ⟶ *_G
