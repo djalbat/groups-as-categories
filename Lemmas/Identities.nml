@@ -9,21 +9,21 @@ Lemma (GroupCaegoryElementsCorrespondToMorphims)
   Suppose
     g is an element of G
   Then
-    μ_g:*_G ⟶ *_G
-  Proof
-    g is an element of G iff μ_g:*_G ⟶ *_G by GroupCategoryMorphisms
+    μ_g:*_G ⟶ *_G in C_G
+  Proof 
+    g is an element of G iff μ_g:*_G ⟶ *_G in C_G by GroupCategoryMorphisms
     g is an element of G
   Therefore
-    μ_g:*_G ⟶ *_G by BiconditionalImplicationLeftElimination
+    μ_g:*_G ⟶ *_G in C_G by BiconditionalImplicationLeftElimination
 
 Lemma (GroupCaegoryMorphismsCorrespondToElements)
   Suppose
-    μ_g:*_G ⟶ *_G
+    μ_g:*_G ⟶ *_G in C_G
   Then
     g is an element of G
   Proof
-    g is an element of G iff μ_g:*_G ⟶ *_G by GroupCategoryMorphisms
-    μ_g:*_G ⟶ *_G
+    g is an element of G iff μ_g:*_G ⟶ *_G in C_G by GroupCategoryMorphisms
+    μ_g:*_G ⟶ *_G in C_G
   Therefore
     g is an element of G by BiconditionalImplicationRightElimination
 
@@ -84,23 +84,23 @@ Lemma (GroupCategoryIdentityElementsCorrespondToIdentityMorphisms)
   Then
     μ_e is an identity morphism of *_G
   Proof
-    μ_e is an identity morphism of *_G iff (μ_e:*_G ⟶ *_G ∧ [*_G, *_G, μ_e, μ_g] satisfies CategoryLeftIdentityMorphisms ∧ [*_G, *_G, μ_g, μ_e] satisfies CategoryRightIdentityMorphisms) by IdentityMorphisms
+    μ_e is an identity morphism of *_G iff (μ_e:*_G ⟶ *_G in C_G ∧ [C_G, *_G, *_G, μ_e, μ_g] satisfies CategoryLeftIdentityMorphisms ∧ [C_G, *_G, *_G, μ_g, μ_e] satisfies CategoryRightIdentityMorphisms) by IdentityMorphisms
     e is an element of G by GroupIdentityElementsAreElements
-    μ_e:*_G ⟶ *_G by GroupCaegoryElementsCorrespondToMorphims
+    μ_e:*_G ⟶ *_G in C_G by GroupCaegoryElementsCorrespondToMorphims
     Suppose
-      μ_g:*_G ⟶ *_G
+      μ_g:*_G ⟶ *_G in C_G
     Hence
       g is an element of G by GroupCaegoryMorphismsCorrespondToElements
     Then
       μ_e;μ_g = μ_g by GroupCategoryLeftIdentityMorphismsAlternateForm
-    [*_G, *_G, μ_e, μ_g] satisfies CategoryLeftIdentityMorphisms
+    [C_G, *_G, *_G, μ_e, μ_g] satisfies CategoryLeftIdentityMorphisms
     Suppose
-      μ_g:*_G ⟶ *_G
+      μ_g:*_G ⟶ *_G in C_G
     Hence
       g is an element of G by GroupCaegoryMorphismsCorrespondToElements
     Then
       μ_g = μ_g;μ_e by GroupCategoryRightIdentityMorphismsAlternateForm
-    [*_G, *_G, μ_g, μ_e] satisfies CategoryRightIdentityMorphisms
-    μ_e:*_G ⟶ *_G ∧ [*_G, *_G, μ_e, μ_g] satisfies CategoryLeftIdentityMorphisms ∧ [*_G, *_G, μ_g, μ_e] satisfies CategoryRightIdentityMorphisms by DoubleConjunctionIntroduction
+    [C_G, *_G, *_G, μ_g, μ_e] satisfies CategoryRightIdentityMorphisms
+    μ_e:*_G ⟶ *_G in C_G ∧ [C_G, *_G, *_G, μ_e, μ_g] satisfies CategoryLeftIdentityMorphisms ∧ [C_G, *_G, *_G, μ_g, μ_e] satisfies CategoryRightIdentityMorphisms by DoubleConjunctionIntroduction
     Therefore
       μ_e is an identity morphism of *_G by BiconditionalImplicationRightElimination

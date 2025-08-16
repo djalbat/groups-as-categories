@@ -6,12 +6,12 @@ Variable f:Element
 Variable g:Element
 
 Axiom (GroupCategoryMorphisms)
-  f is an element of G iff μ_f:*_G ⟶ *_G
+  f is an element of G iff μ_f:*_G ⟶ *_G in C_G
 
 Axiom (GroupCategoryComposition)
   Suppose
+    o is an operation of G
     f is an element of G
     g is an element of G
-    o is an operation of G
   Then
     μ_f;μ_g = μ_(g o f)

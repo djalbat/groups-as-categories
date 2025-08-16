@@ -29,15 +29,11 @@ Theorem (GroupsAsCategories)
       μ_f:*_G ⟶ *_G in C_G
       μ_g:*_G ⟶ *_G in C_G
     Hence
-      μ_f:*_G ⟶ *_G by CategoryShorthandMorphismInroduction
-      μ_g:*_G ⟶ *_G by CategoryShorthandMorphismInroduction
       f is an element of G by GroupCaegoryMorphismsCorrespondToElements
       g is an element of G by GroupCaegoryMorphismsCorrespondToElements
-      g o f is an element of G by foo
-      .
-      .
-      .
-      .
+      g o f is an element of G by GroupsAreClosed
+      μ_(g o f):*_G ⟶ *_G  in C_G by GroupCaegoryElementsCorrespondToMorphims
+      μ_f;μ_g = μ_(g o f) by GroupCategoryComposition
     Then
       μ_f;μ_g:*_G ⟶ *_G in C_G
       [C_G, *_G, *_G, *_G, μ_f, μ_g] satisfies CategoryCompositionOfMorphisms
