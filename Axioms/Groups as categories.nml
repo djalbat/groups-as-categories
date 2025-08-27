@@ -10,8 +10,8 @@ Axiom (GroupCategoryMorphisms)
 
 Axiom (GroupCategoryComposition)
   Suppose
-    o is an operation of G
     f is an element of G
     g is an element of G
+    o is an operation of G
   Then
     μ_f;μ_g = μ_(g o f)

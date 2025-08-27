@@ -1,83 +1,13 @@
 Variable G:Group provisionally
 
-Variable C:Category provisionally
-
-Variable o:Operation
-
-Variable e:Element
-Variable f:Element
-Variable g:Element
-Variable h:Element
-
-Theorem (GroupsAsCategories)
+Theorem (GroupsCategories)
   Suppose
     G:Group
-    o is an operation of G
-    e is an identity element of G
   Then
     C_G:Category
   Proof
-    Suppose
-      *_G is an object of C_G
-    Hence
-      μ_e is an identity morphism of *_G iff μ_e = id_*_G by CanonicalFormForIdentityMorhpisms
-      μ_e is an identity morphism of *_G by GroupCategoryIdentityElementsCorrespondToIdentityMorphisms
-      μ_e = id_*_G by BiconditionalImplicationLeftElimination
-    Then
-      id_*_G is an identity morphism of *_G
-    [C_G, *_G] satisfies CategoryIdentityMorphisms
-    Suppose
-      μ_f:*_G ⟶ *_G in C_G
-      μ_g:*_G ⟶ *_G in C_G
-    Hence
-      f is an element of G by GroupCaegoryMorphismsCorrespondToElements
-      g is an element of G by GroupCaegoryMorphismsCorrespondToElements
-      g o f is an element of G by GroupsAreClosed
-      μ_(g o f):*_G ⟶ *_G  in C_G by GroupCaegoryElementsCorrespondToMorphims
-      μ_f;μ_g = μ_(g o f) by GroupCategoryComposition
-    Then
-      μ_f;μ_g:*_G ⟶ *_G in C_G
-    [C_G, *_G, *_G, *_G, μ_f, μ_g] satisfies CategoryComposition
-    Suppose
-      μ_f:*_G ⟶ *_G in C_G
-      μ_g:*_G ⟶ *_G in C_G
-      μ_h:*_G ⟶ *_G in C_G
-    Hence
-      f is an element of G by GroupCaegoryMorphismsCorrespondToElements
-      g is an element of G by GroupCaegoryMorphismsCorrespondToElements
-      h is an element of G by GroupCaegoryMorphismsCorrespondToElements
-      g o f is an element of G by GroupClosure
-      h o g is an element of G by GroupClosure
-      f is an element of G
-      g is an element of G
-      μ_f;μ_g = μ_(g o f) by GroupCategoryComposition
-      g is an element of G
-      h is an element of G
-      μ_g;μ_h = μ_(h o g) by GroupCategoryComposition
-      g o f is an element of G
-      h is an element of G
-      μ_(g o f);μ_h = μ_(h o (g o f)) by GroupCategoryComposition
-      (μ_f;μ_g);μ_h = μ_(h o (g o f))
-      f is an element of G
-      h o g is an element of G
-      μ_f;μ_(h o g) = μ_((h o g) o f) by GroupCategoryComposition
-      μ_f;(μ_g;μ_h) = μ_((h o g) o f)
-      f is an element of G
-      g is an element of G
-      h is an element of G
-      h o (g o f) = (h o g) o f = h o g o f by GroupsAreAssociative
-      h o (g o f) = (h o g) o f by DoubleEqualityRightElimination
-      (h o g) o f = h o g o f by DoubleEqualityLeftElimination
-      (μ_f;μ_g);μ_h = μ_(h o g o f)
-      μ_f;(μ_g;μ_h) = μ_(h o g o f)
-      f is an element of G
-      h o g is an element of G
-      μ_f;μ_(h o g) = μ_(h o g o f) by GroupCategoryComposition
-      μ_f;μ_g;μ_h = μ_(h o g o f)
-      (μ_f;μ_g);μ_h = μ_f;(μ_g;μ_h)
-      μ_f;(μ_g;μ_h) = μ_f;μ_g;μ_h
-    Then
-      (μ_f;μ_g);μ_h = μ_f;(μ_g;μ_h) = μ_f;μ_g;μ_h by DoubleEqualityIntroduction
-    [C_G, *_G, *_G, *_G, *_G, μ_f, μ_g, μ_h] satisfies CategoryAssociativity
-    Therefore
+    [C_G] satisfies CategoryCompositionOfMorphisms by GroupCategoryCompositionOfMorphisms
+    [C_G] satisfies CategoryCompositionIsAssociative by GroupCategoryCompositionIsAssociative
+    [C_G] satisfies CategoryIdentityMorphisms by GroupCategoryIdentityMorphisms
+  Therefore
     C_G:Category by Categories

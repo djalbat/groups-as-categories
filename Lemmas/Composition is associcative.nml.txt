@@ -1,0 +1,65 @@
+Variable C:Category provisionally
+
+Variable f:Morphism
+Variable g:Morphism
+Variable h:Morphism
+
+Variable X:Object
+Variable Y:Object
+Variable Z:Object
+Variable W:Object
+
+Lemma (GroupCategoryCompositionIsAssociative)
+  Suppose 
+    f:X ⟶ Y in C
+    g:Y ⟶ Z in C
+    h:Z ⟶ W in C
+  Then
+    (f;g);h = f;(g;h) = f;g;h
+  Proof
+    .
+  Therefore
+    (f;g);h = f;(g;h) = f;g;h
+
+###
+    Suppose
+      μ_f:*_G ⟶ *_G in C_G
+      μ_g:*_G ⟶ *_G in C_G
+      μ_h:*_G ⟶ *_G in C_G
+    Hence
+      f is an element of G by GroupCaegoryMorphismsCorrespondToElements
+      g is an element of G by GroupCaegoryMorphismsCorrespondToElements
+      h is an element of G by GroupCaegoryMorphismsCorrespondToElements
+      g o f is an element of G by GroupClosure
+      h o g is an element of G by GroupClosure
+      f is an element of G
+      g is an element of G
+      μ_f;μ_g = μ_(g o f) by GroupCategoryComposition
+      g is an element of G
+      h is an element of G
+      μ_g;μ_h = μ_(h o g) by GroupCategoryComposition
+      g o f is an element of G
+      h is an element of G
+      μ_(g o f);μ_h = μ_(h o (g o f)) by GroupCategoryComposition
+      (μ_f;μ_g);μ_h = μ_(h o (g o f))
+      f is an element of G
+      h o g is an element of G
+      μ_f;μ_(h o g) = μ_((h o g) o f) by GroupCategoryComposition
+      μ_f;(μ_g;μ_h) = μ_((h o g) o f)
+      f is an element of G
+      g is an element of G
+      h is an element of G
+      h o (g o f) = (h o g) o f = h o g o f by GroupsAreAssociative
+      h o (g o f) = (h o g) o f by DoubleEqualityRightElimination
+      (h o g) o f = h o g o f by DoubleEqualityLeftElimination
+      (μ_f;μ_g);μ_h = μ_(h o g o f)
+      μ_f;(μ_g;μ_h) = μ_(h o g o f)
+      f is an element of G
+      h o g is an element of G
+      μ_f;μ_(h o g) = μ_(h o g o f) by GroupCategoryComposition
+      μ_f;μ_g;μ_h = μ_(h o g o f)
+      (μ_f;μ_g);μ_h = μ_f;(μ_g;μ_h)
+      μ_f;(μ_g;μ_h) = μ_f;μ_g;μ_h
+    Then
+      (μ_f;μ_g);μ_h = μ_f;(μ_g;μ_h) = μ_f;μ_g;μ_h by DoubleEqualityIntroduction
+    [C_G] satisfies CategoryAssociativity
