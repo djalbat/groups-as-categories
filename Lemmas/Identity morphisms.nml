@@ -1,0 +1,124 @@
+Variable G:Group provisionally
+
+Variable X:Object
+Variable Y:Object
+Variable Z:Object
+
+Variable f:Element
+Variable g:Element
+Variable h:Element
+
+Given
+  G:Group
+
+  Lemma (GroupCategoryObjectCanonicalForm)
+    Suppose
+      X is an object of C_G
+    Then
+      X = *_G
+    Proof
+      ∘_G is an operation of G by GroupProjectedOperations
+      X is an object of C_G iff X = *_G by GroupCategoryObjects
+      X is an object of C_G
+    Therefore
+      X = *_G by BiconditionalImplicationLeftElimination
+
+Given
+  G:Group
+
+  Lemma (GroupCategoryMorphismsCanonicalCanonicalForm)
+    μ_(𝓮_G):*_G ⟶ *_G in C_G
+    Proof
+      𝓮_G is an identity element of G by GroupProjectedIdentityElements
+      𝓮_G is an element of G iff μ_(𝓮_G):*_G ⟶ *_G in C_G by GroupCategoryMorphisms
+      𝓮_G is an element of G by GroupIdentityElementsAreElements
+    Therefore
+      μ_(𝓮_G):*_G ⟶ *_G in C_G by BiconditionalImplicationLeftElimination
+
+Given
+  G:Group
+
+  Lemma (GroupCategoryLeftIdentityMorphisms)
+    Suppose 
+      μ_h:*_G ⟶ Z in C_G
+    Then 
+      μ_(𝓮_G);μ_h = μ_h
+    Proof
+      Z is an object of C_G by CategoryCodomainInroduction
+      Z = *_G by GroupCategoryObjectCanonicalForm
+      h is an element of G iff μ_h:*_G ⟶ *_G in C_G by GroupCategoryMorphisms
+      μ_h:*_G ⟶ *_G in C_G
+      h is an element of G by BiconditionalImplicationRightElimination
+      ∘_G is an operation of G by GroupProjectedOperations
+      𝓮_G is an identity element of G by GroupProjectedIdentityElements
+      h ∘_G 𝓮_G = h = 𝓮_G ∘_G h by GroupCompositionWithIdentityElements
+      h ∘_G 𝓮_G = h by DoubleEqualityRightElimination
+      𝓮_G is an element of G by GroupIdentityElementsAreElements
+      h is an element of G
+      ∘_G is an operation of G
+      μ_(𝓮_G);μ_h = μ_(h ∘_G 𝓮_G) by GroupCategoryComposition
+    Therefore
+      μ_(𝓮_G);μ_h = μ_h
+
+Given
+  G:Group
+
+  Lemma (GroupCategoryRightIdentityMorphisms)
+    Suppose 
+      μ_f:X ⟶ *_G in C_G
+    Then 
+      μ_f = μ_f;μ_(𝓮_G)
+    Proof 
+      X is an object of C_G by CategoryDomainInroduction
+      X = *_G by GroupCategoryObjectCanonicalForm
+      f is an element of G iff μ_f:*_G ⟶ *_G in C_G by GroupCategoryMorphisms
+      μ_f:*_G ⟶ *_G in C_G
+      f is an element of G by BiconditionalImplicationRightElimination
+      ∘_G is an operation of G by GroupProjectedOperations
+      𝓮_G is an identity element of G by GroupProjectedIdentityElements
+      f ∘_G 𝓮_G = f = 𝓮_G ∘_G f by GroupCompositionWithIdentityElements
+      f = 𝓮_G ∘_G f by DoubleEqualityLeftElimination
+      f is an element of G
+      𝓮_G is an element of G by GroupIdentityElementsAreElements
+      ∘_G is an operation of G
+      μ_f;μ_(𝓮_G) = μ_(𝓮_G ∘_G f) by GroupCategoryComposition
+      μ_f;μ_(𝓮_G) = μ_f
+    Therefore
+      μ_f = μ_f;μ_(𝓮_G)
+
+Given
+  G:Group
+
+  Lemma (GroupCategoryIdentityMorphism)
+    μ_(𝓮_G) is an identity morphism of *_G
+    Proof
+      μ_(𝓮_G):*_G ⟶ *_G in C_G by GroupCategoryMorphismsCanonicalCanonicalForm
+      [C_G, *_G, μ_(𝓮_G)] satisfies CategoryLeftIdentityMorphisms by GroupCategoryLeftIdentityMorphisms
+      [C_G, *_G, μ_(𝓮_G)] satisfies CategoryRightIdentityMorphisms by GroupCategoryRightIdentityMorphisms
+      μ_(𝓮_G):*_G ⟶ *_G in C_G ∧ [C_G, *_G, μ_(𝓮_G)] satisfies CategoryLeftIdentityMorphisms ∧ [C_G, *_G, μ_(𝓮_G)] satisfies CategoryRightIdentityMorphisms by DoubleConjunctionIntroduction
+      *_G is an object of C_G iff *_G = *_G by GroupCategoryObjects
+      *_G = *_G
+      *_G is an object of C_G by BiconditionalImplicationRightElimination
+      μ_(𝓮_G) is an identity morphism of *_G iff (μ_(𝓮_G):*_G ⟶ *_G in C_G ∧ [C_G, *_G, μ_(𝓮_G)] satisfies CategoryLeftIdentityMorphisms ∧ [C_G, *_G, μ_(𝓮_G)] satisfies CategoryRightIdentityMorphisms) by CategoryIdentityMorphism
+      μ_(𝓮_G):*_G ⟶ *_G in C_G ∧ [C_G, *_G, μ_(𝓮_G)] satisfies CategoryLeftIdentityMorphisms ∧ [C_G, *_G, μ_(𝓮_G)] satisfies CategoryRightIdentityMorphisms
+    Therefore
+      μ_(𝓮_G) is an identity morphism of *_G by BiconditionalImplicationRightElimination
+
+Given
+  G:Group
+
+  Lemma (GroupCategoryIdentityMorphisms)
+    Suppose
+      X is an object of C_G
+    Then
+      id_X:X ⟶ X in C_G
+    Proof
+      X = *_G by GroupCategoryObjectCanonicalForm
+      μ_(𝓮_G) is an identity morphism of *_G by GroupCategoryIdentityMorphism
+      *_G is an object of C_G
+      id_*_G is an identity morphism of *_G by CategoryIdentityMorphismCanonicalForm
+      μ_(𝓮_G) = id_*_G by CategoryIdentityMorphismsAreUnique
+      μ_(𝓮_G):*_G ⟶ *_G in C_G by GroupCategoryMorphismsCanonicalCanonicalForm
+      id_*_G:*_G ⟶ *_G in C_G
+    Therefore
+      id_X:X ⟶ X in C_G

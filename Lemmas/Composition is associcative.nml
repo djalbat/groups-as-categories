@@ -1,0 +1,46 @@
+Variable G:Group provisionally
+
+Variable f:Element
+Variable g:Element
+Variable h:Element
+
+Given
+  G:Group
+
+  Lemma (GroupCategoryCompositionIsAssociative)
+    Suppose 
+      μ_f:*_G ⟶ *_G in C_G
+      μ_g:*_G ⟶ *_G in C_G
+      μ_h:*_G ⟶ *_G in C_G
+    Then
+      (μ_f;μ_g);μ_h = μ_f;(μ_g;μ_h) = μ_f;μ_g;μ_h
+    Proof
+      ∘_G is an operation of G by GroupProjectedOperations
+      f is an element of G by GroupCaegoryMorphismsCorrespondToElements
+      g is an element of G by GroupCaegoryMorphismsCorrespondToElements
+      h is an element of G by GroupCaegoryMorphismsCorrespondToElements
+      g ∘_G f is an element of G by GroupClosure
+      h ∘_G g is an element of G by GroupClosure
+      f is an element of G
+      g is an element of G
+      μ_f;μ_g = μ_(g ∘_G f) by GroupCategoryComposition
+      g is an element of G
+      h is an element of G
+      μ_g;μ_h = μ_(h ∘_G g) by GroupCategoryComposition
+      g ∘_G f is an element of G
+      h is an element of G
+      μ_(g ∘_G f);μ_h = μ_(h ∘_G (g ∘_G f)) by GroupCategoryComposition
+      f is an element of G
+      h ∘_G g is an element of G
+      μ_f;μ_(h ∘_G g) = μ_((h ∘_G g) ∘_G f) by GroupCategoryComposition
+      h ∘_G (g ∘_G f) = (h ∘_G g) ∘_G f = h ∘_G g ∘_G f by GroupsAreAssociative
+      h ∘_G (g ∘_G f) = (h ∘_G g) ∘_G f by DoubleEqualityRightElimination
+      (μ_f;μ_g);μ_h = (μ_f;μ_g);μ_h
+      (μ_f;μ_g);μ_h = μ_(g ∘_G f);μ_h
+      (μ_f;μ_g);μ_h = μ_(h ∘_G (g ∘_G f))
+      (μ_f;μ_g);μ_h = μ_((h ∘_G g) ∘_G f)
+      (μ_f;μ_g);μ_h = μ_f;μ_(h ∘_G g)
+      (μ_f;μ_g);μ_h = μ_f;(μ_g;μ_h)
+      μ_f;(μ_g;μ_h) = μ_f;μ_g;μ_h
+    Therefore
+      (μ_f;μ_g);μ_h = μ_f;(μ_g;μ_h) = μ_f;μ_g;μ_h by DoubleEqualityIntroduction

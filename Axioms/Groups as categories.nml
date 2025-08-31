@@ -5,8 +5,13 @@ Variable o:Operation
 Variable f:Element
 Variable g:Element
 
+Variable X:Object
+
 Axiom (GroupCategoryMorphisms)
   f is an element of G iff μ_f:*_G ⟶ *_G in C_G
+
+Axiom (GroupCategoryObjects)
+  X is an object of C_G iff X = *_G
 
 Axiom (GroupCategoryComposition)
   Suppose
