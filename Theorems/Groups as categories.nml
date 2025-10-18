@@ -1,13 +1,13 @@
-Variable G:Group provisionally
+Variable 𝒢:𝖦𝗋𝗈𝗎𝗉 provisionally
 
 Theorem (GroupsCategories)
   Suppose
-    G:Group
+    𝒢:𝖦𝗋𝗈𝗎𝗉
   Then
-    C_G:Category
+    𝘊_𝒢:𝖢𝖺𝗍𝖾𝗀𝗈𝗋𝗒
   Proof
-    [C_G] satisfies CategoryCompositionOfMorphisms by GroupCategoryCompositionOfMorphisms
-    [C_G] satisfies CategoryCompositionIsAssociative by GroupCategoryCompositionIsAssociative
-    [C_G] satisfies CategoryIdentityMorphisms by GroupCategoryIdentityMorphisms
+    [𝘊_𝒢] satisfies CategoryCompositionOfMorphisms by GroupCategoryCompositionOfMorphisms
+    [𝘊_𝒢] satisfies CategoryCompositionIsAssociative by GroupCategoryCompositionIsAssociative
+    [𝘊_𝒢] satisfies CategoryIdentityMorphisms by GroupCategoryIdentityMorphisms
   Therefore
-    C_G:Category by Categories
+    𝘊_𝒢:𝖢𝖺𝗍𝖾𝗀𝗈𝗋𝗒 by Categories

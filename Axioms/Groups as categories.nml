@@ -1,22 +1,22 @@
-Variable G:Group provisionally
+Variable 𝒢:𝖦𝗋𝗈𝗎𝗉 provisionally
 
-Variable o:Operation
+Variable o:𝖮𝗉𝖾𝗋𝖺𝗍𝗂𝗈𝗇
 
-Variable f:Element
-Variable g:Element
+Variable f:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
+Variable g:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
 
-Variable X:Object
+Variable 𝑋:𝖮𝖻𝗃𝖾𝖼𝗍
 
 Axiom (GroupCategoryMorphisms)
-  f is an element of G iff μ_f:*_G ⟶ *_G in C_G
+  f is an element of 𝒢 𝘪𝘧𝘧 𝝻_f:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
 
 Axiom (GroupCategoryObjects)
-  X is an object of C_G iff X = *_G
+  𝑋 is an object of 𝘊_𝒢 𝘪𝘧𝘧 𝑋 = *_𝒢
 
 Axiom (GroupCategoryComposition)
   Suppose
-    f is an element of G
-    g is an element of G
-    o is an operation of G
+    f is an element of 𝒢
+    g is an element of 𝒢
+    o is an operation of 𝒢
   Then
-    μ_f;μ_g = μ_(g o f)
+    𝝻_f;𝝻_g = 𝝻_(g o f)

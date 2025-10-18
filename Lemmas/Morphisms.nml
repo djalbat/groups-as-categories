@@ -1,28 +1,28 @@
-Variable G:Group provisionally
+Variable 𝒢:𝖦𝗋𝗈𝗎𝗉 provisionally
 
-Variable o:Operation
+Variable o:𝖮𝗉𝖾𝗋𝖺𝗍𝗂𝗈𝗇
 
-Variable e:Element
-Variable g:Element
+Variable e:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
+Variable g:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
 
 Lemma (GroupCaegoryElementsCorrespondToMorphims)
   Suppose
-    g is an element of G
+    g is an element of 𝒢
   Then
-    μ_g:*_G ⟶ *_G in C_G
+    𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
   Proof 
-    g is an element of G iff μ_g:*_G ⟶ *_G in C_G by GroupCategoryMorphisms
-    g is an element of G
+    g is an element of 𝒢 𝘪𝘧𝘧 𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by GroupCategoryMorphisms
+    g is an element of 𝒢
   Therefore
-    μ_g:*_G ⟶ *_G in C_G by BiconditionalImplicationLeftElimination
+    𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by BiconditionalImplicationLeftElimination
 
 Lemma (GroupCaegoryMorphismsCorrespondToElements)
   Suppose
-    μ_g:*_G ⟶ *_G in C_G
+    𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
   Then
-    g is an element of G
+    g is an element of 𝒢
   Proof
-    g is an element of G iff μ_g:*_G ⟶ *_G in C_G by GroupCategoryMorphisms
-    μ_g:*_G ⟶ *_G in C_G
+    g is an element of 𝒢 𝘪𝘧𝘧 𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by GroupCategoryMorphisms
+    𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
   Therefore
-    g is an element of G by BiconditionalImplicationRightElimination
+    g is an element of 𝒢 by BiconditionalImplicationRightElimination
