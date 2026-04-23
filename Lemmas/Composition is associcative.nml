@@ -1,7 +1,5 @@
 Variable 𝒢:𝖦𝗋𝗈𝗎𝗉 provisionally
 
-Variable o:𝖮𝗉𝖾𝗋𝖺𝗍𝗂𝗈𝗇
-
 Variable f:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
 Variable g:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
 Variable h:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
@@ -21,8 +19,8 @@ Given
       f is an element of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
       g is an element of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
       h is an element of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
-      g ∘_𝒢 f is an element of 𝒢 by GroupClosure
-      h ∘_𝒢 g is an element of 𝒢 by GroupClosure
+      g ∘_𝒢 f is an element of 𝒢 by GroupsAreClosed
+      h ∘_𝒢 g is an element of 𝒢 by GroupsAreClosed
       f is an element of 𝒢
       g is an element of 𝒢
       𝝻_f;𝝻_g = 𝝻_(g ∘_𝒢 f) by GroupCategoryComposition

@@ -8,10 +8,10 @@ Variable g:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
 Variable 𝑋:𝖮𝖻𝗃𝖾𝖼𝗍
 
 Axiom (GroupCategoryMorphisms)
-  f is an element of 𝒢 𝘪𝘧𝘧 𝝻_f:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
+  f is an element of 𝒢 𝗂𝖿𝖿 𝝻_f:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
 
 Axiom (GroupCategoryObjects)
-  𝑋 is an object of 𝘊_𝒢 𝘪𝘧𝘧 𝑋 = *_𝒢
+  𝑋 is an object of 𝘊_𝒢 𝗂𝖿𝖿 𝑋 = *_𝒢
 
 Axiom (GroupCategoryComposition)
   Suppose

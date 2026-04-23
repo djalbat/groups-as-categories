@@ -11,7 +11,7 @@ Lemma (GroupCaegoryElementsCorrespondToMorphims)
   Then
     𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
   Proof 
-    g is an element of 𝒢 𝘪𝘧𝘧 𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by GroupCategoryMorphisms
+    g is an element of 𝒢 𝗂𝖿𝖿 𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by GroupCategoryMorphisms
     g is an element of 𝒢
   Therefore
     𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by BiconditionalImplicationLeftElimination
@@ -22,7 +22,7 @@ Lemma (GroupCaegoryMorphismsCorrespondToElements)
   Then
     g is an element of 𝒢
   Proof
-    g is an element of 𝒢 𝘪𝘧𝘧 𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by GroupCategoryMorphisms
+    g is an element of 𝒢 𝗂𝖿𝖿 𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by GroupCategoryMorphisms
     𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
   Therefore
     g is an element of 𝒢 by BiconditionalImplicationRightElimination

@@ -16,7 +16,7 @@ Given
       ∘_𝒢 is an operation of 𝒢 by GroupProjectedOperations
       f is an element of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
       g is an element of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
-      g ∘_𝒢 f is an element of 𝒢 𝘪𝘧𝘧 𝝻_(g ∘_𝒢 f):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢  by GroupCategoryMorphisms
+      g ∘_𝒢 f is an element of 𝒢 𝗂𝖿𝖿 𝝻_(g ∘_𝒢 f):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢  by GroupCategoryMorphisms
       g ∘_𝒢 f is an element of 𝒢 by GroupsAreClosed
       𝝻_(g ∘_𝒢 f):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢  by BiconditionalImplicationLeftElimination
       𝝻_f;𝝻_g = 𝝻_(g ∘_𝒢 f) by GroupCategoryComposition
