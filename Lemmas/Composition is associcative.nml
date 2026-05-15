@@ -34,7 +34,7 @@ Given
       h ∘_𝒢 g is an element of 𝒢
       𝝻_f;𝝻_(h ∘_𝒢 g) = 𝝻_((h ∘_𝒢 g) ∘_𝒢 f) by GroupCategoryComposition
       h ∘_𝒢 (g ∘_𝒢 f) = (h ∘_𝒢 g) ∘_𝒢 f = h ∘_𝒢 g ∘_𝒢 f by GroupsAreAssociative
-      h ∘_𝒢 (g ∘_𝒢 f) = (h ∘_𝒢 g) ∘_𝒢 f by DoubleEqualityRightElimination
+      h ∘_𝒢 (g ∘_𝒢 f) = (h ∘_𝒢 g) ∘_𝒢 f by DoubleEqualityLeftElimination
       (𝝻_f;𝝻_g);𝝻_h = (𝝻_f;𝝻_g);𝝻_h
       (𝝻_f;𝝻_g);𝝻_h = 𝝻_(g ∘_𝒢 f);𝝻_h
       (𝝻_f;𝝻_g);𝝻_h = 𝝻_(h ∘_𝒢 (g ∘_𝒢 f))

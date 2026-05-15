@@ -20,7 +20,7 @@ Given
       𝑋 is an object of 𝘊_𝒢 𝗂𝖿𝖿 𝑋 = *_𝒢 by GroupCategoryObjects
       𝑋 is an object of 𝘊_𝒢
     Therefore
-      𝑋 = *_𝒢 by BiconditionalImplicationLeftElimination
+      𝑋 = *_𝒢 by BiconditionalImplicationRightElimination
 
 Given
   𝒢:𝖦𝗋𝗈𝗎𝗉
@@ -32,7 +32,7 @@ Given
       𝓮_𝒢 is an element of 𝒢 𝗂𝖿𝖿 𝝻_(𝓮_𝒢):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by GroupCategoryMorphisms
       𝓮_𝒢 is an element of 𝒢 by GroupIdentityElementsAreElements
     Therefore
-      𝝻_(𝓮_𝒢):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by BiconditionalImplicationLeftElimination
+      𝝻_(𝓮_𝒢):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by BiconditionalImplicationRightElimination
 
 Given
   𝒢:𝖦𝗋𝗈𝗎𝗉
@@ -47,11 +47,11 @@ Given
       𝑍 = *_𝒢 by GroupCategoryObjectCanonicalForm
       h is an element of 𝒢 𝗂𝖿𝖿 𝝻_h:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by GroupCategoryMorphisms
       𝝻_h:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
-      h is an element of 𝒢 by BiconditionalImplicationRightElimination
+      h is an element of 𝒢 by BiconditionalImplicationLeftElimination
       ∘_𝒢 is an operation of 𝒢 by GroupProjectedOperations
       𝓮_𝒢 is an identity element of 𝒢 by GroupProjectedIdentityElements
       h ∘_𝒢 𝓮_𝒢 = h = 𝓮_𝒢 ∘_𝒢 h by GroupCompositionWithIdentityElements
-      h ∘_𝒢 𝓮_𝒢 = h by DoubleEqualityRightElimination
+      h ∘_𝒢 𝓮_𝒢 = h by DoubleEqualityLeftElimination
       𝓮_𝒢 is an element of 𝒢 by GroupIdentityElementsAreElements
       h is an element of 𝒢
       ∘_𝒢 is an operation of 𝒢
@@ -72,11 +72,11 @@ Given
       𝑋 = *_𝒢 by GroupCategoryObjectCanonicalForm
       f is an element of 𝒢 𝗂𝖿𝖿 𝝻_f:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by GroupCategoryMorphisms
       𝝻_f:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
-      f is an element of 𝒢 by BiconditionalImplicationRightElimination
+      f is an element of 𝒢 by BiconditionalImplicationLeftElimination
       ∘_𝒢 is an operation of 𝒢 by GroupProjectedOperations
       𝓮_𝒢 is an identity element of 𝒢 by GroupProjectedIdentityElements
       f ∘_𝒢 𝓮_𝒢 = f = 𝓮_𝒢 ∘_𝒢 f by GroupCompositionWithIdentityElements
-      f = 𝓮_𝒢 ∘_𝒢 f by DoubleEqualityLeftElimination
+      f = 𝓮_𝒢 ∘_𝒢 f by DoubleEqualityRightElimination
       f is an element of 𝒢
       𝓮_𝒢 is an element of 𝒢 by GroupIdentityElementsAreElements
       ∘_𝒢 is an operation of 𝒢
@@ -97,11 +97,11 @@ Given
       𝝻_(𝓮_𝒢):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 ∧ [𝘊_𝒢, *_𝒢, 𝝻_(𝓮_𝒢)] satisfies CategoryLeftIdentityMorphisms ∧ [𝘊_𝒢, *_𝒢, 𝝻_(𝓮_𝒢)] satisfies CategoryRightIdentityMorphisms by DoubleConjunctionIntroduction
       *_𝒢 is an object of 𝘊_𝒢 𝗂𝖿𝖿 *_𝒢 = *_𝒢 by GroupCategoryObjects
       *_𝒢 = *_𝒢
-      *_𝒢 is an object of 𝘊_𝒢 by BiconditionalImplicationRightElimination
+      *_𝒢 is an object of 𝘊_𝒢 by BiconditionalImplicationLeftElimination
       𝝻_(𝓮_𝒢) is an identity morphism of *_𝒢 𝗂𝖿𝖿 (𝝻_(𝓮_𝒢):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 ∧ [𝘊_𝒢, *_𝒢, 𝝻_(𝓮_𝒢)] satisfies CategoryLeftIdentityMorphisms ∧ [𝘊_𝒢, *_𝒢, 𝝻_(𝓮_𝒢)] satisfies CategoryRightIdentityMorphisms) by CategoryIdentityMorphism
       𝝻_(𝓮_𝒢):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 ∧ [𝘊_𝒢, *_𝒢, 𝝻_(𝓮_𝒢)] satisfies CategoryLeftIdentityMorphisms ∧ [𝘊_𝒢, *_𝒢, 𝝻_(𝓮_𝒢)] satisfies CategoryRightIdentityMorphisms
     Therefore
-      𝝻_(𝓮_𝒢) is an identity morphism of *_𝒢 by BiconditionalImplicationRightElimination
+      𝝻_(𝓮_𝒢) is an identity morphism of *_𝒢 by BiconditionalImplicationLeftElimination
 
 Given
   𝒢:𝖦𝗋𝗈𝗎𝗉

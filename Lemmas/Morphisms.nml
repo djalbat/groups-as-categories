@@ -14,7 +14,7 @@ Lemma (GroupCaegoryElementsCorrespondToMorphims)
     g is an element of 𝒢 𝗂𝖿𝖿 𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by GroupCategoryMorphisms
     g is an element of 𝒢
   Therefore
-    𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by BiconditionalImplicationLeftElimination
+    𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by BiconditionalImplicationRightElimination
 
 Lemma (GroupCaegoryMorphismsCorrespondToElements)
   Suppose
@@ -25,4 +25,4 @@ Lemma (GroupCaegoryMorphismsCorrespondToElements)
     g is an element of 𝒢 𝗂𝖿𝖿 𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢 by GroupCategoryMorphisms
     𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
   Therefore
-    g is an element of 𝒢 by BiconditionalImplicationRightElimination
+    g is an element of 𝒢 by BiconditionalImplicationLeftElimination
