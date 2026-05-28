@@ -15,23 +15,23 @@ Given
     Then
       (𝝻_f;𝝻_g);𝝻_h = 𝝻_f;(𝝻_g;𝝻_h) = 𝝻_f;𝝻_g;𝝻_h
     Proof
-      ∘_𝒢 is an operation of 𝒢 by GroupProjectedOperations
-      f is an element of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
-      g is an element of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
-      h is an element of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
-      g ∘_𝒢 f is an element of 𝒢 by GroupsAreClosed
-      h ∘_𝒢 g is an element of 𝒢 by GroupsAreClosed
-      f is an element of 𝒢
-      g is an element of 𝒢
+      ∘_𝒢 is an 𝘰𝘱𝘦𝘳𝘢𝘵𝘪𝘰𝘯 of 𝒢 by GroupProjectedOperations
+      f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
+      g is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
+      h is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
+      g ∘_𝒢 f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 by GroupsAreClosed
+      h ∘_𝒢 g is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 by GroupsAreClosed
+      f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢
+      g is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢
       𝝻_f;𝝻_g = 𝝻_(g ∘_𝒢 f) by GroupCategoryComposition
-      g is an element of 𝒢
-      h is an element of 𝒢
+      g is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢
+      h is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢
       𝝻_g;𝝻_h = 𝝻_(h ∘_𝒢 g) by GroupCategoryComposition
-      g ∘_𝒢 f is an element of 𝒢
-      h is an element of 𝒢
+      g ∘_𝒢 f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢
+      h is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢
       𝝻_(g ∘_𝒢 f);𝝻_h = 𝝻_(h ∘_𝒢 (g ∘_𝒢 f)) by GroupCategoryComposition
-      f is an element of 𝒢
-      h ∘_𝒢 g is an element of 𝒢
+      f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢
+      h ∘_𝒢 g is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢
       𝝻_f;𝝻_(h ∘_𝒢 g) = 𝝻_((h ∘_𝒢 g) ∘_𝒢 f) by GroupCategoryComposition
       h ∘_𝒢 (g ∘_𝒢 f) = (h ∘_𝒢 g) ∘_𝒢 f = h ∘_𝒢 g ∘_𝒢 f by GroupsAreAssociative
       h ∘_𝒢 (g ∘_𝒢 f) = (h ∘_𝒢 g) ∘_𝒢 f by DoubleEqualityLeftElimination

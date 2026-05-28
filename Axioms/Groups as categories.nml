@@ -8,15 +8,15 @@ Variable g:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
 Variable 𝑋:𝖮𝖻𝗃𝖾𝖼𝗍
 
 Axiom (GroupCategoryMorphisms)
-  f is an element of 𝒢 𝗂𝖿𝖿 𝝻_f:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
+  f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 𝗂𝖿𝖿 𝝻_f:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
 
 Axiom (GroupCategoryObjects)
-  𝑋 is an object of 𝘊_𝒢 𝗂𝖿𝖿 𝑋 = *_𝒢
+  𝑋 is an 𝘰𝘣𝘫𝘦𝘤𝘵 of 𝘊_𝒢 𝗂𝖿𝖿 𝑋 = *_𝒢
 
 Axiom (GroupCategoryComposition)
   Suppose
-    f is an element of 𝒢
-    g is an element of 𝒢
-    o is an operation of 𝒢
+    f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢
+    g is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢
+    o is an 𝘰𝘱𝘦𝘳𝘢𝘵𝘪𝘰𝘯 of 𝒢
   Then
     𝝻_f;𝝻_g = 𝝻_(g o f)
