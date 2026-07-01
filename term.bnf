@@ -1,4 +1,4 @@
 
 
-                term  ::=  ( "*_" | "𝘊_" | "𝝻_" )<NO_WHITESPACE>argument ;
+                term  ::=  ( "*_" | "𝘊_" | "𝝻_" )<NO_WHITESPACE>argument (3) ;
 
