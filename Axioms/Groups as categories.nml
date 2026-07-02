@@ -19,4 +19,4 @@ Axiom (GroupCategoryComposition)
     g is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢
     o is an 𝘰𝘱𝘦𝘳𝘢𝘵𝘪𝘰𝘯 of 𝒢
   Then
-    𝝻_f;𝝻_g = 𝝻_(g o f)
+    𝝻_f;𝝻_g = 𝝻_(g`o`f)

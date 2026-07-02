@@ -16,9 +16,9 @@ Given
       ∘_𝒢 is an 𝘰𝘱𝘦𝘳𝘢𝘵𝘪𝘰𝘯 of 𝒢 by GroupProjectedOperations
       f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
       g is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 by GroupCaegoryMorphismsCorrespondToElements
-      g ∘_𝒢 f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 𝗂𝖿𝖿 𝝻_(g ∘_𝒢 f):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢  by GroupCategoryMorphisms
-      g ∘_𝒢 f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 by GroupsAreClosed
-      𝝻_(g ∘_𝒢 f):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢  by BiconditionalImplicationRightElimination
-      𝝻_f;𝝻_g = 𝝻_(g ∘_𝒢 f) by GroupCategoryComposition
+      g`∘_𝒢`f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 𝗂𝖿𝖿 𝝻_(g`∘_𝒢`f):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢  by GroupCategoryMorphisms
+      g`∘_𝒢`f is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 of 𝒢 by GroupsAreClosed
+      𝝻_(g`∘_𝒢`f):*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢  by BiconditionalImplicationRightElimination
+      𝝻_f;𝝻_g = 𝝻_(g`∘_𝒢`f) by GroupCategoryComposition
     Therefore
       𝝻_f;𝝻_g:*_𝒢 ⟶ *_𝒢 in 𝘊_𝒢
